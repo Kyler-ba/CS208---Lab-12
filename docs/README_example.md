@@ -1,22 +1,17 @@
 # CS208 Full Stack Final Project - Donut Shop Application
 
 - Name: John Doe
-- GitHub: [https://github.com/johndoe](https://github.com/johndoe)
+- GitHub: [https://github.com/Kyler-ba/CS208---Lab-12.git]
 - Term: Spring 2026
 
 ## Project Description
 
-This is my full-stack application for CS208, built with node.js. I built a web
-application for a small donut shop that allows users to view and order donuts
-online. The application uses Express for the backend and MariaDB (MySQL) for the
-database. Please read the following instructions carefully because some of the
-setup only needs to be done once.
+This project contains a rudimentary "chore list" implimenting pug and SQL that 
+allows the user to log, edit, delete, and keep track of tasks
 
 ## Install the Database
 
-To set up the database, run the `install_db.sh` script in the setup_scripts
-directory. This script will install MariaDB and start the server running. You
-only need to run this script once per Codespace.
+Run the code below in the terminal to install the database
 
 ```bash
 ./setup_scripts/install_db.sh
@@ -24,7 +19,7 @@ only need to run this script once per Codespace.
 
 ## Create the Database Tables
 
-Create the initial tables by running the following command:
+Use this code to initialize database tables
 
 ```bash
 sudo mysql -u root -p < ./setup_scripts/create_demo_table.sql
@@ -32,7 +27,7 @@ sudo mysql -u root -p < ./setup_scripts/create_demo_table.sql
 
 ## Install Dependencies
 
-Install the required dependencies using npm:
+Use this code to install the necessary dependencies to ruin the server
 
 ```bash
 npm install
@@ -40,7 +35,7 @@ npm install
 
 ## Run the Application
 
-Start the application using the following command:
+Start the application using the following command
 
 ```bash
 npm start
@@ -48,5 +43,4 @@ npm start
 
 ## Access the Application
 
-On Codespaces, you can access the application by forwarding port 3000. Open the
-forwarded port in your browser to view the application.
+Through codespaces, click on "Open in browser" once the windows pops up in the bottom right.
