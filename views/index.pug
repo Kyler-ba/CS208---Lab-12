@@ -3,6 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  hr
+  h2 Add a new task
+  form(method='POST' action='/create')
+    label(for='task') Task:
+    input(type='text', name='task', id='task', required)
+    button(type='submit') Create Task
+
   ol
   each val in todos
     li
@@ -14,10 +21,15 @@ block content
       form(method='POST' action='/delete')
         input(type='hidden', name='id', value=val.id)
         button(type='submit') Delete
+        
+      //adds a complete action
+      form(method='POST' action='/complete')
+        input(type='hidden', name='id', value=val.id)
+        input(type='hidden', name='task', value=1)
+        button(type='submit') Complete
 
-  hr
-  h2 Add a new task
-  form(method='POST' action='/create')
-    label(for='task') Task:
-    input(type='text', name='task', id='task', required)
-    button(type='submit') Create Task
+      //adds an edit action
+      form(method='POST' action='/edit')
+        input(type='hidden', name='id', value=val.id)
+        input(type='text', name='task', value=val.task, required)
+        button(type='submit') Update

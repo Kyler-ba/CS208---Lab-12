@@ -1,3 +1,8 @@
+*{
+  background-color: black;
+  color: white;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -6,3 +11,25 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+h1{
+  background-color: red;
+  width: 100vw;
+  padding: 20px;
+  font-size: 40px;
+  margin-left: -50px;
+
+  text-align: center;
+}
+
+hr{
+   width: 100vw;
+  margin-left: -50px;
+  align-self: center;
+}
+
+button{
+  background-color: red;
+}
+
